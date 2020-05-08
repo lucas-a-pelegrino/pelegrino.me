@@ -1,19 +1,25 @@
 {
   "env": {
-    "commonjs": true,
-    "es6": true,
-    "node": true
+    "browser": true,
+    "es6": true
   },
-  "plugins": ["prettier", "security"],
-  "extends": ["airbnb-base", "prettier", "plugin:prettier/recommended", "plugin:security/recommended"],
+  "plugins": ["react", "prettier", "security"],
+  "extends": ["plugin:react/recommended", "airbnb", "plugin:security/recommended"],
   "globals": {
     "Atomics": "readonly",
     "SharedArrayBuffer": "readonly"
   },
   "parserOptions": {
-    "ecmaVersion": 2018
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2018,
+    "sourceType": "module"
   },
   "settings": {
+    "react": {
+      "version": "detect"
+    },
     "import/resolver": {
       "node": {
         "moduleDirectory": ["node_modules", "src"]
@@ -21,36 +27,28 @@
     }
   },
   "rules": {
+    "comma-dangle": "off",
+    "quotes": [2, "double", "avoid-escape"],
     "linebreak-style": 0,
-    "operator-linebreak": 0,
-    "no-console": [
-      "error",
+    "jsx-a11y/label-has-associated-control": [
+      2,
       {
-        "allow": ["warn", "info", "error"]
+        "components": [],
+        "required": {
+          "some": ["nesting", "id"]
+        },
+        "allowChildren": true
       }
     ],
-    "no-plusplus": 0,
-    "no-restricted-syntax": 0,
-    "guard-for-in": 0,
-    "no-continue": 0,
-    "prefer-promise-reject-CONSTANTS": 0,
-    "implicit-arrow-linebreak": 0,
-    "no-shadow": 0,
-    "function-paren-newline": 0,
-    "no-case-declarations": 0,
-    "max-len": 0,
-    "prettier/prettier": "error",
-    "no-throw-literal": 0,
-    "func-names": "off",
-    "consistent-return": "off",
-    "import/no-extraneous-dependencies": "off",
-    "no-underscore-dangle": "off",
-    "security/detect-object-injection": "off",
-    "no-unused-vars": [
-      "error",
+    "react/forbid-prop-types": 0,
+    "react/no-array-index-key": 0,
+    "react/jsx-props-no-spreading": 0,
+    "react/jsx-filename-extension": [
+      1,
       {
-        "args": "none"
+        "extensions": [".js", ".jsx"]
       }
-    ]
+    ],
+    "implicit-arrow-linebreak": "off"
   }
 }
