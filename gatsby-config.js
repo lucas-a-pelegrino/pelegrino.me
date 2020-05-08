@@ -5,6 +5,10 @@
  */
 
 module.exports = {
-  /* Your site config here */
+  siteMetadata: {
+    title: 'Lucas Pelegrino',
+    siteUrl: 'https://pelegrino.me',
+    description: 'A website about me!',
+  },
   plugins: [],
-}
+};
