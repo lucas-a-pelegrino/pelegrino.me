@@ -1,8 +1,7 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import styled, { createGlobalStyle } from 'styled-components';
 
-import { WindowCanvas, WindowBar } from '../components/core';
+import { WindowCanvas, WindowBar } from '../components';
 
 import BackgroundImageUrl from '../assets/images/night-road.jpg';
 
