@@ -10,5 +10,10 @@ module.exports = {
     siteUrl: 'https://pelegrino.me',
     description: 'A website about me!',
   },
-  plugins: [],
+  plugins: [
+    {
+      resolve: `gatsby-plugin-styled-components`,
+      options: {},
+    },
+  ],
 };
