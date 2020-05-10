@@ -1,4 +1,4 @@
-import WindowFrame from './WindowFrame';
-import TopBar from './TopBar';
+import WindowCanvas from './WindowCanvas';
+import WindowBar from './WindowBar';
 
-export { WindowFrame, TopBar };
+export { WindowCanvas, WindowBar };

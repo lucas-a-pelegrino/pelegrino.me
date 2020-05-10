@@ -6,14 +6,14 @@ const Window = styled.div`
   height: 430px;
   background-color: #2e3440;
 
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
 `;
 
-class WindowFrame extends React.Component {
+class WindowCanvas extends React.Component {
   render() {
     return <Window></Window>;
   }
 }
 
-export default WindowFrame;
+export default WindowCanvas;
