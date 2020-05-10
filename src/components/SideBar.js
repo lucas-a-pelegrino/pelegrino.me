@@ -1,12 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { CustomText } from './core';
+import { CustomText, ListItem as Item } from './core';
 
 import ArrowDownIcon from '../assets/images/Icons/arrow-down.svg';
+import htmlIcon from '../assets/images/Icons/html-icon.svg';
+import javascriptIcon from '../assets/images/Icons/javascript-icon.svg';
+import npmIcon from '../assets/images/Icons/npm-icon.svg';
 
 const SideBarStyled = styled.div`
-  height: 398px;
   width: 195px;
   border-right: solid 1px #434c5e;
 `;
@@ -26,7 +28,7 @@ const SectionTitle = styled.div`
   background-color: #434c5e;
 `;
 
-const SectionTitleElement = styled.div`
+const SectionTitleElement = styled.span`
   display: flex;
   margin-left: 5px;
 `;
@@ -35,15 +37,15 @@ export default function SideBar() {
   const files = [
     {
       name: 'about.html',
-      icon: 'html-icon',
+      icon: htmlIcon,
     },
     {
       name: 'workExperience.js',
-      icon: 'javascript-icon',
+      icon: javascriptIcon,
     },
     {
       name: 'package.json',
-      icon: 'npm-icon',
+      icon: npmIcon,
     },
   ];
   return (
@@ -58,11 +60,13 @@ export default function SideBar() {
         <SectionTitleElement>
           <CustomText
             text="LUCAS-PELEGRINO"
-            styles={{ fontColor: '#eceff4', fontWeight: 'bold', fontSize: '8px' }}
+            styles={{ fontColor: '#eceff4', fontWeight: 'bold', fontSize: '7px' }}
           />
         </SectionTitleElement>
       </SectionTitle>
-      {files.forEach((file) => {})}
+      {files.map((file) => (
+        <Item file={file} />
+      ))}
     </SideBarStyled>
   );
 }
