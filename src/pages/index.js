@@ -1,7 +1,7 @@
 import React from 'react';
 import styled, { createGlobalStyle } from 'styled-components';
 
-import { WindowCanvas, WindowBar } from '../components';
+import { WindowCanvas, WindowBar, WindowFooter } from '../components';
 
 import BackgroundImageUrl from '../assets/images/night-road.jpg';
 
@@ -26,7 +26,7 @@ const Content = styled.div`
 const WindowContainer = styled.div`
   display: flex;
   width: 722px;
-  height: 453px;
+  height: 463px;
   flex-flow: column;
   justify-content: center;
   align-items: center;
@@ -42,6 +42,7 @@ export default function App() {
       <WindowContainer>
         <WindowBar />
         <WindowCanvas />
+        <WindowFooter />
       </WindowContainer>
       <BackgroundImage />
     </Content>
