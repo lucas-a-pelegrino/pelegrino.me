@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import SideBar from './SideBar';
+import TabBar from './TabBar';
 
 const Window = styled.div`
   display: flex;
@@ -14,6 +15,7 @@ export default function WindowCanvas() {
   return (
     <Window>
       <SideBar />
+      <TabBar />
     </Window>
   );
 }
