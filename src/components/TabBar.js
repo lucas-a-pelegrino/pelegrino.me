@@ -5,25 +5,28 @@ import { Item } from './core';
 
 import htmlIcon from '../assets/images/icons/html-icon.svg';
 
-const TabBarStyled = styled.div`
+const Container = styled.div`
   display: flex;
   width: 524px;
   height: 20px;
 `;
 
 const ItemStyled = styled(Item)`
+  height: 20px;
   width: 100px;
 `;
 
-export default function TabBar() {
+const TabBar = () => {
   const file = {
     name: 'about.html',
     icon: htmlIcon,
   };
 
   return (
-    <TabBarStyled>
-      <ItemStyled file={file} height="20px" width="100px" active={true} />
-    </TabBarStyled>
+    <Container>
+      <ItemStyled file={file} active={true} />
+    </Container>
   );
-}
+};
+
+export default TabBar;

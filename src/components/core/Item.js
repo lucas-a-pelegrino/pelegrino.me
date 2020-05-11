@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 
 import CustomText from './CustomText';
 import CloseIcon from '../../assets/images/icons/close.svg';
 
-const ItemStyled = styled.span`
+const ItemStyled = styled.div`
   display: flex;
   height: ${(props) => props.height || '15px'};
   ${(props) => (props.width ? `width: ${props.width};` : '')}
@@ -24,46 +24,24 @@ const Element = styled.span`
   margin-left: 5px;
 `;
 
-export default class Item extends Component {
-  constructor(props) {
-    super(props);
+const Item = ({ file, active }) => {
+  const [isHovering, handleMouseHovering] = useState(false);
 
-    this.handleMouseHover = this.handleMouseHover.bind(this);
-    this.state = {
-      isHovering: false,
-    };
-  }
-
-  handleMouseHover() {
-    this.setState(this.toggleHoverState);
-  }
-
-  toggleHoverState(state) {
-    return {
-      isHovering: !state.isHovering,
-    };
-  }
-
-  render() {
-    const { file, height, width, active } = this.props;
-    console.log(this.state);
-    return (
-      <ItemStyled height={height} width={width} active={active && true}>
+  return (
+    <ItemStyled active={active}>
+      <Element>
+        <img src={file.icon} />
+      </Element>
+      <Element>
+        <CustomText text={file.name} styles={{ fontColor: '#eceff4', fontWeight: 'bold', fontSize: '8px' }} />
+      </Element>
+      {isHovering && active && (
         <Element>
-          <img src={file.icon} />
+          <img src={CloseIcon} />
         </Element>
-        <Element>
-          <CustomText
-            text={file.name}
-            styles={{ fontColor: '#eceff4', fontWeight: 'bold', fontSize: '8px' }}
-          />
-        </Element>
-        {this.state.isHovering && active && (
-          <Element onMouseOver={this.handleMouseHover}>
-            <img src={CloseIcon} />
-          </Element>
-        )}
-      </ItemStyled>
-    );
-  }
-}
+      )}
+    </ItemStyled>
+  );
+};
+
+export default Item;
