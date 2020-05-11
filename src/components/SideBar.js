@@ -1,12 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { CustomText, ListItem as Item } from './core';
+import { CustomText, Item } from './core';
 
-import ArrowDownIcon from '../assets/images/Icons/arrow-down.svg';
-import htmlIcon from '../assets/images/Icons/html-icon.svg';
-import javascriptIcon from '../assets/images/Icons/javascript-icon.svg';
-import npmIcon from '../assets/images/Icons/npm-icon.svg';
+import ArrowDownIcon from '../assets/images/icons/arrow-down.svg';
+import htmlIcon from '../assets/images/icons/html-icon.svg';
+import javascriptIcon from '../assets/images/icons/javascript-icon.svg';
+import npmIcon from '../assets/images/icons/npm-icon.svg';
 
 const SideBarStyled = styled.div`
   width: 195px;
