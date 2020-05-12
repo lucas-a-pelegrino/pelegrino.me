@@ -8,7 +8,7 @@ import htmlIcon from '../assets/images/icons/html-icon.svg';
 import javascriptIcon from '../assets/images/icons/javascript-icon.svg';
 import npmIcon from '../assets/images/icons/npm-icon.svg';
 
-const SideBarStyled = styled.div`
+const Container = styled.div`
   width: 195px;
   border-right: solid 1px #434c5e;
 `;
@@ -20,7 +20,7 @@ const Header = styled.div`
   padding-left: 5px;
 `;
 
-const SectionTitle = styled.div`
+const SectionLabel = styled.div`
   display: flex;
   height: 10px;
   flex-direction: row;
@@ -28,45 +28,49 @@ const SectionTitle = styled.div`
   background-color: #434c5e;
 `;
 
-const SectionTitleElement = styled.span`
+const Element = styled.span`
   display: flex;
   margin-left: 5px;
 `;
 
-export default function SideBar() {
-  const files = [
-    {
-      name: 'about.html',
-      icon: htmlIcon,
-    },
-    {
-      name: 'workExperience.js',
-      icon: javascriptIcon,
-    },
-    {
-      name: 'package.json',
-      icon: npmIcon,
-    },
-  ];
+// TODO: will be removed later.
+const files = [
+  {
+    name: 'about.html',
+    icon: htmlIcon,
+  },
+  {
+    name: 'workExperience.js',
+    icon: javascriptIcon,
+  },
+  {
+    name: 'package.json',
+    icon: npmIcon,
+  },
+];
+
+const SideBar = () => {
   return (
-    <SideBarStyled>
+    <Container>
       <Header>
         <CustomText text="EXPLORER" styles={{ fontColor: '#eceff4', fontWeight: 'bold', fontSize: '8px' }} />
       </Header>
-      <SectionTitle>
-        <SectionTitleElement>
+      <SectionLabel>
+        <Element>
           <img src={ArrowDownIcon} alt="arrow-down-icon" />
-        </SectionTitleElement>
-        <SectionTitleElement>
+        </Element>
+        <Element>
           <CustomText
             text="LUCAS-PELEGRINO"
             styles={{ fontColor: '#eceff4', fontWeight: 'bold', fontSize: '7px' }}
           />
-        </SectionTitleElement>
-      </SectionTitle>
+        </Element>
+      </SectionLabel>
       {files.map((file) => (
-        <Item file={file} />
+        <Item file={file} key={file.name} />
       ))}
-    </SideBarStyled>
+    </Container>
   );
-}
+};
+
+export default SideBar;
