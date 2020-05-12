@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import CustomText from './CustomText';
 import CloseIcon from '../../assets/images/icons/close.svg';
 
-const ItemStyled = styled.div`
+const Container = styled.div`
   display: flex;
   height: ${(props) => props.height || '15px'};
   ${(props) => (props.width ? `width: ${props.width};` : '')}
@@ -24,11 +24,22 @@ const Element = styled.span`
   margin-left: 5px;
 `;
 
-const Item = ({ file, active }) => {
-  const [isHovering, handleMouseHovering] = useState(false);
+const CloseButton = styled(Element)`
+  margin-left: 20px;
+`;
+
+const Item = ({ file, active, styles }) => {
+  const { height, width } = styles;
+  const [isHovering, showCloseButton] = useState(false);
 
   return (
-    <ItemStyled active={active}>
+    <Container
+      active={active}
+      height={height}
+      width={width}
+      onMouseEnter={() => showCloseButton(true)}
+      onMouseLeave={() => showCloseButton(false)}
+    >
       <Element>
         <img src={file.icon} />
       </Element>
@@ -36,11 +47,11 @@ const Item = ({ file, active }) => {
         <CustomText text={file.name} styles={{ fontColor: '#eceff4', fontWeight: 'bold', fontSize: '8px' }} />
       </Element>
       {isHovering && active && (
-        <Element>
+        <CloseButton>
           <img src={CloseIcon} />
-        </Element>
+        </CloseButton>
       )}
-    </ItemStyled>
+    </Container>
   );
 };
 

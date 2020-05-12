@@ -33,6 +33,10 @@ const Element = styled.span`
   margin-left: 5px;
 `;
 
+const SideBarItem = styled(Item)`
+  height: 20px;
+`;
+
 // TODO: will be removed later.
 const files = [
   {
@@ -67,7 +71,7 @@ const SideBar = () => {
         </Element>
       </SectionLabel>
       {files.map((file) => (
-        <Item file={file} key={file.name} />
+        <SideBarItem file={file} key={file.name} styles={{ height: '15px', width: '195px' }} />
       ))}
     </Container>
   );

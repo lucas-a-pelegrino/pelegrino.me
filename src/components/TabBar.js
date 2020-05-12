@@ -11,7 +11,7 @@ const Container = styled.div`
   height: 20px;
 `;
 
-const ItemStyled = styled(Item)`
+const TabBarItem = styled(Item)`
   height: 20px;
   width: 100px;
 `;
@@ -24,7 +24,7 @@ const TabBar = () => {
 
   return (
     <Container>
-      <ItemStyled file={file} active={true} />
+      <TabBarItem file={file} active={true} styles={{ height: '20px', width: '100px' }} />
     </Container>
   );
 };
