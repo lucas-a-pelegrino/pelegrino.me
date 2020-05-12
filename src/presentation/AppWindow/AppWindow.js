@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { SideBar } from '../../components';
+import { SideBar, TabBar } from '../../components';
 
 import {
   AppWindowStyle as Container,
@@ -21,6 +21,7 @@ const AppWindow = () => {
       </TopBar>
       <Editor>
         <SideBar />
+        <TabBar />
       </Editor>
       <BottomBar>
         <CopyrightText

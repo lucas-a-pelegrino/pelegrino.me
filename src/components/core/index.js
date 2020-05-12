@@ -1,4 +1,4 @@
 import CustomText from './CustomText';
-import ListItem from './ListItem';
+import Item from './Item';
 
-export { CustomText, ListItem };
+export { CustomText, Item };
