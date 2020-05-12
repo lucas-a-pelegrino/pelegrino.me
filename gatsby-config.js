@@ -10,6 +10,7 @@ module.exports = {
     siteUrl: 'https://pelegrino.me',
     description: 'A website about me!',
   },
+  pathPrefix: '/pelegrino.me',
   plugins: [
     {
       resolve: `gatsby-plugin-styled-components`,
