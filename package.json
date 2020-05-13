@@ -1,15 +1,15 @@
 {
-  "name": "lucas-pelegrino-web",
+  "name": "pelegrino.me",
   "private": true,
   "description": "A personal website with some things about myself.",
   "version": "0.1.0",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
+    "url": "https://github.com/lucas-a-pelegrino/pelegrino.me"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/lucas-a-pelegrino/pelegrino.me/issues"
   },
   "scripts": {
     "build": "gatsby build",
