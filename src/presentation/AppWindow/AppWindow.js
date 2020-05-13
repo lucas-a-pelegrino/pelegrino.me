@@ -25,7 +25,7 @@ const AppWindow = () => {
       </Editor>
       <BottomBar>
         <CopyrightText
-          text="COPYRIGHT @ 2020 - LUCAS PELEGRINO"
+          text="© 2020 LUCAS PELEGRINO"
           styles={{ fontColor: '#eceff4', fontWeight: 'bold', fontSize: '8px' }}
         />
       </BottomBar>
