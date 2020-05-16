@@ -16,7 +16,7 @@ const App = ({ location }) => {
   return (
     <Content>
       <GlobalStyle />
-      <AppWindow />
+      <AppWindow location={location}>{/* TODO: AboutMe */}</AppWindow>
     </Content>
   );
 };
