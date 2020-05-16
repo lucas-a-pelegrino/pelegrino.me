@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { CustomText, Item } from './core';
+import { Item } from './core';
 
 import ArrowDownIcon from '../assets/images/icons/arrow-down.svg';
 import htmlIcon from '../assets/images/icons/html-icon.svg';
@@ -57,17 +57,14 @@ const SideBar = () => {
   return (
     <Container>
       <Header>
-        <CustomText text="EXPLORER" styles={{ fontColor: '#eceff4', fontWeight: 'bold', fontSize: '8px' }} />
+        <span>EXPLORER</span>
       </Header>
       <SectionLabel>
         <Element>
           <img src={ArrowDownIcon} alt="arrow-down-icon" />
         </Element>
         <Element>
-          <CustomText
-            text="LUCAS-PELEGRINO"
-            styles={{ fontColor: '#eceff4', fontWeight: 'bold', fontSize: '7px' }}
-          />
+          <span>LUCAS-PELEGRINO</span>
         </Element>
       </SectionLabel>
       {files.map((file) => (

@@ -12,7 +12,7 @@ const Content = styled.div`
   align-items: center;
 `;
 
-const App = () => {
+const App = ({ location }) => {
   return (
     <Content>
       <GlobalStyle />

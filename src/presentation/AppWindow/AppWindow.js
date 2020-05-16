@@ -24,10 +24,7 @@ const AppWindow = () => {
         <TabBar />
       </Editor>
       <BottomBar>
-        <CopyrightText
-          text="© 2020 LUCAS PELEGRINO"
-          styles={{ fontColor: '#eceff4', fontWeight: 'bold', fontSize: '8px' }}
-        />
+        <CopyrightText>© 2020 LUCAS PELEGRINO</CopyrightText>
       </BottomBar>
     </Container>
   );

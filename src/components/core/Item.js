@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 
-import CustomText from './CustomText';
 import CloseIcon from '../../assets/images/icons/close.svg';
 
 const Container = styled.div`
@@ -44,7 +43,7 @@ const Item = ({ file, active, styles }) => {
         <img src={file.icon} />
       </Element>
       <Element>
-        <CustomText text={file.name} styles={{ fontColor: '#eceff4', fontWeight: 'bold', fontSize: '8px' }} />
+        <span>{file.name}</span>
       </Element>
       {isHovering && active && (
         <CloseButton>
