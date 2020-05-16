@@ -8,9 +8,8 @@ module.exports = {
   siteMetadata: {
     title: 'Lucas Pelegrino',
     siteUrl: 'https://pelegrino.me',
-    description: 'A website about me!',
+    description: 'A personal website with some things about myself',
   },
-  pathPrefix: '/pelegrino.me',
   plugins: [
     {
       resolve: `gatsby-plugin-styled-components`,
