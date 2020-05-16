@@ -10,7 +10,7 @@ export const AppWindowStyle = styled.div`
   justify-content: center;
   align-items: center;
 
-  border: solid 1px;
+  border: solid 1px #000000;
   border-radius: 5px;
   box-shadow: inset 0px 0px 0px 1px #808383;
 `;
@@ -55,6 +55,6 @@ export const BottomBarStyle = styled.div`
   border-bottom-right-radius: 3px;
 `;
 
-export const CopyrightTextStyle = styled(CustomText)`
+export const CopyrightTextStyle = styled.span`
   align-items: center;
 `;
