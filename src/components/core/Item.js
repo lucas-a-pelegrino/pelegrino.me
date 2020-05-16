@@ -42,9 +42,7 @@ const Item = ({ file, active, styles }) => {
       <Element>
         <img src={file.icon} />
       </Element>
-      <Element>
-        <span>{file.name}</span>
-      </Element>
+      <Element>{file.name}</Element>
       {isHovering && active && (
         <CloseButton>
           <img src={CloseIcon} />
