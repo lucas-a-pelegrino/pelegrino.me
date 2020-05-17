@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 import GlobalStyle from '../GlobalStyles';
 import AppWindow from '../presentation/AppWindow';
+import { AboutMe } from '../components';
 
 const Content = styled.div`
   display: flex;
@@ -16,7 +17,9 @@ const App = ({ location }) => {
   return (
     <Content>
       <GlobalStyle />
-      <AppWindow location={location}>{/* TODO: AboutMe */}</AppWindow>
+      <AppWindow location={location}>
+        <AboutMe />
+      </AppWindow>
     </Content>
   );
 };

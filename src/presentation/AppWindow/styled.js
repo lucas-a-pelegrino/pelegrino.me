@@ -1,7 +1,5 @@
 import styled from 'styled-components';
 
-import { CustomText } from '../../components/core';
-
 export const AppWindowStyle = styled.div`
   display: flex;
   width: 722px;
@@ -41,6 +39,11 @@ export const EditorStyle = styled.div`
   width: 720px;
   height: 430px;
   background-color: #2e3440;
+`;
+
+export const CanvasStyle = styled.div`
+  display: flex;
+  flex-flow: row wrap;
 `;
 
 export const BottomBarStyle = styled.div`

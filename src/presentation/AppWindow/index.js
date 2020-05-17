@@ -7,6 +7,7 @@ import {
   TopBarStyle as TopBar,
   StreetlightStyle as Streetlight,
   EditorStyle as Editor,
+  CanvasStyle as Canvas,
   BottomBarStyle as BottomBar,
   CopyrightTextStyle as CopyrightText,
 } from './styled';
@@ -21,8 +22,10 @@ const AppWindow = ({ location, children }) => {
       </TopBar>
       <Editor>
         <SideBar location={location} />
-        <TabBar location={location} />
-        {children}
+        <Canvas>
+          <TabBar location={location} />
+          {children}
+        </Canvas>
       </Editor>
       <BottomBar>
         <CopyrightText>© 2020 LUCAS PELEGRINO</CopyrightText>
