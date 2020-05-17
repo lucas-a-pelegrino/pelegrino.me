@@ -1,41 +1,11 @@
 import React from 'react';
-import styled from 'styled-components';
 
-import { Item } from './core';
+import { Container, Header, SectionLabel, Element, SideBarItem as Item } from './styled';
 
 import ArrowDownIcon from '../assets/images/icons/arrow-down.svg';
 import htmlIcon from '../assets/images/icons/html-icon.svg';
 import javascriptIcon from '../assets/images/icons/javascript-icon.svg';
 import npmIcon from '../assets/images/icons/npm-icon.svg';
-
-const Container = styled.div`
-  width: 195px;
-  border-right: solid 1px #434c5e;
-`;
-
-const Header = styled.div`
-  display: flex;
-  height: 20px;
-  align-items: center;
-  padding-left: 5px;
-`;
-
-const SectionLabel = styled.div`
-  display: flex;
-  height: 10px;
-  flex-direction: row;
-  align-items: center;
-  background-color: #434c5e;
-`;
-
-const Element = styled.span`
-  display: flex;
-  margin-left: 5px;
-`;
-
-const SideBarItem = styled(Item)`
-  height: 20px;
-`;
 
 // TODO: will be removed later.
 const files = [
@@ -68,7 +38,7 @@ const SideBar = () => {
         </Element>
       </SectionLabel>
       {files.map((file) => (
-        <SideBarItem file={file} key={file.name} styles={{ height: '15px', width: '195px' }} />
+        <Item file={file} key={file.name} styles={{ height: '15px', width: '195px' }} />
       ))}
     </Container>
   );
