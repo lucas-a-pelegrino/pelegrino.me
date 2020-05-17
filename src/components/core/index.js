@@ -1,3 +1,4 @@
 import Item from './Item';
+import Avatar from './Avatar';
 
-export { Item };
+export { Item, Avatar };
