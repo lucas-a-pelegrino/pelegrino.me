@@ -2,10 +2,10 @@ import React from 'react';
 
 import { Container, Header, SectionLabel, Element, SideBarItem as Item } from './styled';
 
-import ArrowDownIcon from '../assets/images/icons/arrow-down.svg';
-import htmlIcon from '../assets/images/icons/html-icon.svg';
-import javascriptIcon from '../assets/images/icons/javascript-icon.svg';
-import npmIcon from '../assets/images/icons/npm-icon.svg';
+import ArrowDownIcon from '../../assets/images/icons/arrow-down.svg';
+import htmlIcon from '../../assets/images/icons/html-icon.svg';
+import javascriptIcon from '../../assets/images/icons/javascript-icon.svg';
+import npmIcon from '../../assets/images/icons/npm-icon.svg';
 
 // TODO: will be removed later.
 const files = [

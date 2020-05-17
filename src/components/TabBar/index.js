@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Container, ItemStyled as Item } from './styled';
 
-import htmlIcon from '../assets/images/icons/html-icon.svg';
+import htmlIcon from '../../assets/images/icons/html-icon.svg';
 
 const TabBar = () => {
   const file = {
