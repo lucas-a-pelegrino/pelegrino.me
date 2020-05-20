@@ -13,14 +13,6 @@ const files = [
     name: 'about.html',
     icon: htmlIcon,
   },
-  {
-    name: 'workExperience.js',
-    icon: javascriptIcon,
-  },
-  {
-    name: 'package.json',
-    icon: npmIcon,
-  },
 ];
 
 const SideBar = () => {
