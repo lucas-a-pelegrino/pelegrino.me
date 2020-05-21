@@ -9,7 +9,6 @@ import { SEO } from '../components/core';
 const Content = styled.div`
   display: flex;
   height: 100vh;
-  flex-flow: column;
   justify-content: center;
   align-items: center;
 `;

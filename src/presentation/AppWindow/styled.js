@@ -2,11 +2,12 @@ import styled from 'styled-components';
 
 export const AppWindowStyle = styled.div`
   display: flex;
-  width: 722px;
-  height: 463px;
-  flex-flow: column;
-  justify-content: center;
+  width: 60vw;
+  height: 70vh;
+
+  flex-flow: column nowrap;
   align-items: center;
+  justify-content: center;
 
   border: solid 1px #000000;
   border-radius: 5px;
@@ -14,9 +15,9 @@ export const AppWindowStyle = styled.div`
 `;
 
 export const TopBarStyle = styled.div`
-  width: 720px;
-  height: 20px;
   display: flex;
+  width: 99.8%;
+  height: 4%;
   flex-direction: row;
 
   background-image: linear-gradient(to top, #3a3e3f, #2f3234);
@@ -36,8 +37,8 @@ export const StreetlightStyle = styled.span`
 
 export const EditorStyle = styled.div`
   display: flex;
-  width: 720px;
-  height: 430px;
+  width: 99.8%;
+  height: 92.5%;
   background-color: #2e3440;
 `;
 
@@ -48,8 +49,8 @@ export const CanvasStyle = styled.div`
 
 export const BottomBarStyle = styled.div`
   display: flex;
-  height: 10px;
-  width: 720px;
+  width: 99.8%;
+  height: 3%;
   background-color: #3b4252;
 
   justify-content: center;

@@ -8,11 +8,11 @@ export default createGlobalStyle`
     background-image: url(${BackgroundImageUrl});
     background-size: cover;
     background-repeat: no-repeat;
-
-    margin: 0;
+    
+    margin: 0px auto;
 
     font-family: Menlo;
-    font-size: 8px;
+    font-size: 11px;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
