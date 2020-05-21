@@ -11,12 +11,13 @@ export const AppWindowStyle = styled.div`
 
   border: solid 1px #000000;
   border-radius: 5px;
+  padding: 1px;
   box-shadow: inset 0px 0px 0px 1px #808383;
 `;
 
 export const TopBarStyle = styled.div`
   display: flex;
-  width: 99.8%;
+  width: 100%;
   height: 4%;
   flex-direction: row;
 
@@ -28,8 +29,8 @@ export const TopBarStyle = styled.div`
 `;
 
 export const StreetlightStyle = styled.span`
-  width: 10px;
-  height: 10px;
+  width: 1.3%;
+  height: 50%;
   border-radius: 5px;
   margin: 5px 0px 5px 5px;
   background-color: ${(props) => props.color};
@@ -37,8 +38,8 @@ export const StreetlightStyle = styled.span`
 
 export const EditorStyle = styled.div`
   display: flex;
-  width: 99.8%;
-  height: 92.5%;
+  width: 100%;
+  height: 93%;
   background-color: #2e3440;
 `;
 
@@ -49,7 +50,7 @@ export const CanvasStyle = styled.div`
 
 export const BottomBarStyle = styled.div`
   display: flex;
-  width: 99.8%;
+  width: 100%;
   height: 3%;
   background-color: #3b4252;
 
