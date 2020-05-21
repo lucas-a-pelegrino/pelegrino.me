@@ -4,8 +4,7 @@ import { Container, Element, CloseButton } from './styled';
 
 import CloseIcon from '../../../assets/images/icons/close.svg';
 
-const Item = ({ file, active, styles }) => {
-  const { height, width } = styles;
+const Item = ({ file, active, height, width }) => {
   const [isHovering, showCloseButton] = useState(false);
 
   return (

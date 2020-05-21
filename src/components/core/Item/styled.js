@@ -2,8 +2,8 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   display: flex;
-  height: ${(props) => props.height || '15px'};
-  ${(props) => (props.width ? `width: ${props.width};` : '')}
+  height: ${(props) => `${props.height}px` || '15px'};
+  ${(props) => (props.width ? `width: ${props.width}%;` : 'width: 100%;')}
   flex-direction: row;
   align-items: center;
   cursor: pointer;
