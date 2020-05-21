@@ -1,11 +1,15 @@
 import React from 'react';
 
-import { Container, Header, SectionLabel, Element, SideBarItem as Item } from './styled';
+import { Item } from '../core';
 
-import ArrowDownIcon from '../../assets/images/icons/arrow-down.svg';
+import {
+  Container as SideBarContainer,
+  Header,
+  SectionLabel,
+  SectionLabelElement as Element,
+} from './styled';
+
 import htmlIcon from '../../assets/images/icons/html-icon.svg';
-import javascriptIcon from '../../assets/images/icons/javascript-icon.svg';
-import npmIcon from '../../assets/images/icons/npm-icon.svg';
 
 // TODO: will be removed later.
 const files = [
@@ -17,22 +21,15 @@ const files = [
 
 const SideBar = () => {
   return (
-    <Container>
-      <Header>
-        <span>EXPLORER</span>
-      </Header>
+    <SideBarContainer>
+      <Header>EXPLORER</Header>
       <SectionLabel>
-        <Element>
-          <img src={ArrowDownIcon} alt="arrow-down-icon" />
-        </Element>
-        <Element>
-          <span>LUCAS-PELEGRINO</span>
-        </Element>
+        <Element>LUCAS-PELEGRINO</Element>
       </SectionLabel>
       {files.map((file) => (
-        <Item file={file} key={file.name} styles={{ height: '15px', width: '195px' }} />
+        <Item file={file} key={file.name} height={20} width={100} />
       ))}
-    </Container>
+    </SideBarContainer>
   );
 };
 

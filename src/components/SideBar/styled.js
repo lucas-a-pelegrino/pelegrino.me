@@ -1,9 +1,15 @@
 import styled from 'styled-components';
-import { Item } from '../core';
 
 export const Container = styled.div`
-  width: 195px;
+  display: flex;
+  flex-flow: column nowrap;
+  width: 40%;
   border-right: solid 1px #434c5e;
+  font-size: 0.88em;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 
 export const Header = styled.div`
@@ -15,17 +21,12 @@ export const Header = styled.div`
 
 export const SectionLabel = styled.div`
   display: flex;
-  height: 10px;
+  height: 15px;
   flex-direction: row;
   align-items: center;
   background-color: #434c5e;
 `;
 
-export const Element = styled.span`
-  display: flex;
+export const SectionLabelElement = styled.span`
   margin-left: 5px;
-`;
-
-export const SideBarItem = styled(Item)`
-  height: 20px;
 `;
