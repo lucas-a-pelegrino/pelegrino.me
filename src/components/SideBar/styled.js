@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Container = styled.div`
   display: flex;
   flex-flow: column nowrap;
-  width: 40%;
+  width: 25%;
   border-right: solid 1px #434c5e;
   font-size: 0.88em;
 

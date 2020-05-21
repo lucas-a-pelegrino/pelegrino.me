@@ -2,8 +2,6 @@ import styled from 'styled-components';
 
 export const AboutMeStyled = styled.div`
   display: flex;
-  width: 524px;
-  height: 410px;
   align-items: center;
   flex-direction: column;
   justify-content: space-evenly;

@@ -45,7 +45,9 @@ export const EditorStyle = styled.div`
 
 export const CanvasStyle = styled.div`
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column nowrap;
+  justify-content: stretch;
+  width: 75%;
 `;
 
 export const BottomBarStyle = styled.div`
