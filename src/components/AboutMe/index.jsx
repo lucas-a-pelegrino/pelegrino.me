@@ -2,12 +2,14 @@ import React from 'react';
 import Social from '../Social';
 import { Avatar } from '../core';
 
-import { AboutMeStyled as Container, AboutMeTextStyled as AboutMeText } from './styled';
+import { AboutMeStyled as Container, Row, AboutMeTextStyled as AboutMeText } from './styled';
 
 const AboutMe = () => {
   return (
     <Container>
-      <Avatar />
+      <Row>
+        <Avatar />
+      </Row>
       <AboutMeText>
         Hi! My name is Lucas Pelegrino, 26 years old living in Belo Horizonte - Minas Gerais, Brazil.
         Currently working as Full Stack Developer at ioasys. I have been writing code for about 4+ years,
@@ -18,7 +20,9 @@ const AboutMe = () => {
         love classic rock like Led Zeppelin and country folks like The White Buffalo, and last but not least
         important: I am a big fan of Harley Davidson!
       </AboutMeText>
-      <Social />
+      <Row>
+        <Social />
+      </Row>
     </Container>
   );
 };

@@ -4,11 +4,13 @@ export const AboutMeStyled = styled.div`
   display: flex;
   height: 100%;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
+`;
 
-  @media (max-width: 768px) {
-  }
+export const Row = styled.div`
+  display: flex;
+  justify-content: center;
+  padding: 30px;
 `;
 
 export const AboutMeTextStyled = styled.pre`
