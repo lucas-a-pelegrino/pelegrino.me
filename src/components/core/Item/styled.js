@@ -4,7 +4,7 @@ export const Container = styled.div`
   display: flex;
   height: ${(props) => `${props.height}px` || '15px'};
   ${(props) => (props.width ? `width: ${props.width}%;` : 'width: 100%;')}
-  flex-direction: row;
+  flex-flow: row nowrap;
   align-items: center;
   cursor: pointer;
 
@@ -16,10 +16,9 @@ export const Container = styled.div`
 `;
 
 export const Element = styled.span`
-  display: flex;
   margin-left: 5px;
 `;
 
 export const CloseButton = styled(Element)`
-  margin-left: 20px;
+  margin-left: 35%;
 `;

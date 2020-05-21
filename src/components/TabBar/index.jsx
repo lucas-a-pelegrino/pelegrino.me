@@ -1,6 +1,8 @@
 import React from 'react';
 
-import { Container, ItemStyled as Item } from './styled';
+import { Item } from '../core';
+
+import { Container as TabBarContainer } from './styled';
 
 import htmlIcon from '../../assets/images/icons/html-icon.svg';
 
@@ -11,9 +13,9 @@ const TabBar = () => {
   };
 
   return (
-    <Container>
-      <Item file={file} active={true} styles={{ height: '20px', width: '100px' }} />
-    </Container>
+    <TabBarContainer>
+      <Item file={file} key={file.name} height={20} width={25} active />
+    </TabBarContainer>
   );
 };
 
