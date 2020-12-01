@@ -1,6 +1,6 @@
 import React from 'react';
 import Social from '../Social';
-import { Avatar } from '../core';
+import Avatar from '../Avatar';
 
 import { AboutMeStyled as Container, Row, AboutMeTextStyled as TextRow } from './styled';
 
