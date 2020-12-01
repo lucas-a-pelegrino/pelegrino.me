@@ -18,9 +18,7 @@ const App = ({ location }) => {
     <Content>
       <SEO title="About" />
       <GlobalStyle />
-      <MyCard location={location}>
-        <AboutMe />
-      </MyCard>
+      <MyCard location={location} />
     </Content>
   );
 };

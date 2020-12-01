@@ -1,15 +1,17 @@
 import React from 'react';
 
-import {
-  AppWindowStyle as Container,
-  EditorStyle as Editor,
-  CanvasStyle as Canvas,
-  BottomBarStyle as BottomBar,
-  CopyrightTextStyle as CopyrightText,
-} from './styled';
+import { Avatar, AboutMe, Social } from '../../components';
+
+import { Card } from './styled';
 
 const MyCard = ({ location, children }) => {
-  return <h1>Hello World</h1>;
+  return (
+    <Card>
+      <Avatar />
+      {/* <AboutMe /> */}
+      {/* <Social /> */}
+    </Card>
+  );
 };
 
 export default MyCard;
