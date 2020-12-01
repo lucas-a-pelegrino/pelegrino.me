@@ -8,8 +8,8 @@ const MyCard = ({ location, children }) => {
   return (
     <Card>
       <Avatar />
-      {/* <AboutMe /> */}
-      {/* <Social /> */}
+      <AboutMe />
+      <Social />
     </Card>
   );
 };
