@@ -1,12 +1,12 @@
 import React from 'react';
 
-import { SocialStyled as Container, TextStyled as Text, SocialLinks, LinkStyled as Link } from './styled';
+import { SocialStyled as Container, TextStyled as Text, SocialLinks } from './styled';
 
-import GithubIcon from '../../assets/images/icons/logo-github.svg';
-import TwitterIcon from '../../assets/images/icons/logo-twitter.svg';
-import LinkedinIcon from '../../assets/images/icons/logo-linkedin.svg';
-import InstagramIcon from '../../assets/images/icons/logo-instagram.svg';
-import EmailIcon from '../../assets/images/icons/icon-email.svg';
+import GithubIcon from '../../assets/images/logo-github.svg';
+import TwitterIcon from '../../assets/images/logo-twitter.svg';
+import LinkedinIcon from '../../assets/images/logo-linkedin.svg';
+import InstagramIcon from '../../assets/images/logo-instagram.svg';
+import EmailIcon from '../../assets/images/icon-email.svg';
 
 const Social = () => {
   return (
