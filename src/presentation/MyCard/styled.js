@@ -10,7 +10,7 @@ export const Card = styled.div`
 
   flex-flow: column nowrap;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
 
   background-color: ${theme.colors.cardBackground};
 
