@@ -13,21 +13,21 @@ const Social = () => {
     <Container>
       <Text>You can find me at:</Text>
       <SocialLinks>
-        <Link first={true} href="https://github.com/lucas-a-pelegrino" target="_blank">
+        <a href="https://github.com/lucas-a-pelegrino" target="_blank">
           <img src={GithubIcon} alt="github" />
-        </Link>
-        <Link href="https://twitter.com/mrcrowlp" target="_blank">
+        </a>
+        <a href="https://twitter.com/mrcrowlp" target="_blank">
           <img src={TwitterIcon} alt="twitter" />
-        </Link>
-        <Link href="https://www.linkedin.com/in/lucas-a-pelegrino/" target="_blank">
+        </a>
+        <a href="https://www.linkedin.com/in/lucas-a-pelegrino/" target="_blank">
           <img src={LinkedinIcon} alt="linkedin" />
-        </Link>
-        <Link href="https://www.instagram.com/mr.crow.lp/" target="_blank">
+        </a>
+        <a href="https://www.instagram.com/mr.crow.lp/" target="_blank">
           <img src={InstagramIcon} alt="instagram" />
-        </Link>
-        <Link rel="noopener" href="mailto:lucas.assuncao.p@gmail.com">
+        </a>
+        <a rel="noopener" href="mailto:lucas.assuncao.p@gmail.com">
           <img src={EmailIcon} alt="email" />
-        </Link>
+        </a>
       </SocialLinks>
     </Container>
   );
