@@ -1,10 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import GlobalStyle from '../GlobalStyles';
-import AppWindow from '../presentation/AppWindow';
-import { AboutMe } from '../components';
-import { SEO } from '../components/core';
+import { SEO } from '../components';
+import GlobalStyle from '../styles/global';
+import MyCard from '../presentation/MyCard';
 
 const Content = styled.div`
   display: flex;
@@ -18,9 +17,7 @@ const App = ({ location }) => {
     <Content>
       <SEO title="About" />
       <GlobalStyle />
-      <AppWindow location={location}>
-        <AboutMe />
-      </AppWindow>
+      <MyCard location={location} />
     </Content>
   );
 };

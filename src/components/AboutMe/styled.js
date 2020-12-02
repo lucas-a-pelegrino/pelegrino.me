@@ -1,22 +1,16 @@
 import styled from 'styled-components';
 
-export const AboutMeStyled = styled.div`
+import theme from '../../styles/theme';
+
+export const Wrapper = styled.div`
   display: flex;
-  height: 100%;
+  width: 90%;
   flex-direction: column;
   justify-content: center;
 `;
 
-export const Row = styled.div`
-  display: flex;
-  justify-content: center;
-  padding: 30px;
-`;
-
-export const AboutMeTextStyled = styled.pre`
-  margin-left: 20px;
-  margin-right: 20px;
+export const Text = styled.pre`
   text-align: justify;
-  font-size: 0.99em;
+  font-size: ${theme.font.size.md};
   white-space: pre-wrap;
 `;

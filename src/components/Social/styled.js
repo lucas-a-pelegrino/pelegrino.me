@@ -10,12 +10,10 @@ export const TextStyled = styled.h4`
   margin: 0px 0px 5px 0px;
 `;
 
-export const SocialLinks = styled.span`
+export const SocialLinks = styled.div`
+  width: 100%;
   display: flex;
   flex-flow: row wrap;
   align-items: center;
-`;
-
-export const LinkStyled = styled.a`
-  margin: 0px 0px 0px ${(props) => (props.first ? '0px' : '5px')};
+  justify-content: space-evenly;
 `;
