@@ -1,22 +1,23 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import GlobalStyle from '../GlobalStyles';
-import AppWindow from '../presentation/AppWindow';
+import { SEO } from '../components';
+import GlobalStyle from '../styles/global';
+import MyCard from '../presentation/MyCard';
 
 const Content = styled.div`
   display: flex;
   height: 100vh;
-  flex-flow: column;
   justify-content: center;
   align-items: center;
 `;
 
-const App = () => {
+const App = ({ location }) => {
   return (
     <Content>
+      <SEO title="About" />
       <GlobalStyle />
-      <AppWindow />
+      <MyCard location={location} />
     </Content>
   );
 };

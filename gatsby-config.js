@@ -15,5 +15,19 @@ module.exports = {
       resolve: `gatsby-plugin-styled-components`,
       options: {},
     },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Lucas Pelegrino`,
+        short_name: `Pelegrino`,
+        start_url: `/`,
+        icon: 'src/assets/images/favicon.png',
+        background_color: `#3b4252`,
+        theme_color: `#3b4252`,
+        display: `standalone`,
+      },
+    },
+    'gatsby-plugin-offline',
+    'gatsby-plugin-react-helmet',
   ],
 };

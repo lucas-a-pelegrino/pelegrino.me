@@ -1,4 +1,6 @@
-import SideBar from './SideBar';
-import TabBar from './TabBar';
+import SEO from './SEO';
+import Avatar from './Avatar';
+import AboutMe from './AboutMe';
+import Social from './Social';
 
-export { SideBar, TabBar };
+export { SEO, Avatar, AboutMe, Social };
