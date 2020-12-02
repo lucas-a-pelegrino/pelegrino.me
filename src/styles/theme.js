@@ -6,10 +6,10 @@ export default {
     text: '#ECEFF4',
   },
   font: {
-    familyPrimary: 'Menlo, sans-serif',
+    familyPrimary: 'monospace, sans-serif',
     size: {
       sm: '11px',
-      md: '11px',
+      md: '13px',
       lg: '16px',
     },
   },

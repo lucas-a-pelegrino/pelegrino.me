@@ -1,10 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import { SEO } from '../components';
 import GlobalStyle from '../styles/global';
 import MyCard from '../presentation/MyCard';
-import { AboutMe } from '../components';
-import { SEO } from '../components';
 
 const Content = styled.div`
   display: flex;
