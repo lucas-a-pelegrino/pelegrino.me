@@ -15,7 +15,7 @@ const Content = styled.div`
 const App = ({ location }) => {
   return (
     <Content>
-      <SEO title="About" />
+      <SEO title="Dev" />
       <GlobalStyle />
       <MyCard location={location} />
     </Content>
